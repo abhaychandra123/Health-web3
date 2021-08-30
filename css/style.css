@@ -1,0 +1,254 @@
+
+    
+body{
+    margin: 0px;
+}
+a:visited{
+    color: ghostwhite;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color:#333333;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    height: 15vh;
+    /* border: 0.5vw solid red; */
+    border-radius: 5px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+
+}
+.item{
+    font:normal small-caps 1.2em Sans-serif;
+    background-color: #04AA63;
+    color:white;
+    /* border: 3px solid fuchsia; */
+    height: auto;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition:0.5s;
+}
+
+.item:hover{
+    background-color:rgb(22, 22, 22);
+    
+}
+.logo{
+    position: relative;
+    display: flex;
+    height:20vh;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    margin-left:0px;
+    justify-content: space-between;
+}
+#signup{
+    text-align: center;
+    padding: 0.7em;
+    box-sizing: border-box;
+    width: 10em;
+    margin: auto;
+    margin-right: 20px;
+    height: 3em;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    background-color: #01B2D2FF;
+    border-radius: 10px;
+    transition: 0.5s;
+
+
+}
+#signup:hover{
+    background-color:rgb(22, 22, 22) ;
+}
+
+/* css for sidebar */
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+/* css for sidebar */
+/* body{
+  background-image: linear-gradient(to right, #ec6f66, #f3a183);
+} */
+
+/* Information Cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img-card {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 5px solid red;
+  width: 100%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
+}
+/* Information Cards */
+
+/* recent news boxes */
+.recentNews {
+  background-color: rgb(20, 117, 175)  
+}
+.recentNews .news-title {
+  text-align:center;
+  padding-top:30px;
+  padding-bottom:30px;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-size:55px;
+  font-weight:bold;
+  color: #fff;
+}
+.recentNews .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.recentNews .ct-blog {
+  margin-bottom: 30px;
+}
+.ct-blog .inner {
+  background-color: #FFF;
+  padding: 10px;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+  height: 100%;
+}
+.ct-blog .inner:hover {
+  background-color: #e6e6e6;
+}
+.ct-blog .fauxcrop {
+  height: 180px;
+  overflow: hidden;
+}
+.ct-blog .fauxcrop img {
+  width: 100%;
+}
+.ct-blog-content {
+  display: table;
+  padding: 30px 0 28px;
+}
+.ct-blog-content .ct-blog-date {
+  border-right: 1px solid #95A5A6;
+  display: table-cell;
+  font-family: "Lato", sans-serif;
+  padding: 0px 18px 0px 15px;
+  text-align: center;
+}
+.ct-blog-content .ct-blog-date span {
+  font-size: 16px;
+  color: rgb(20, 117, 175);  
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+.ct-blog-content .ct-blog-date strong {
+  font-size: 25px;
+  color: rgb(20, 117, 175);  
+}
+.ct-blog-content .ct-blog-header {
+  color: #000;
+  display: table-cell;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+  padding: 0 20px;
+  vertical-align: top;
+}
+.btn-news {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.btn-news.btn-contests a {
+  color: #fff;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-size: 24px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.btn-news.btn-contests a:hover {
+  color: #000;
+}
+/* recent news boxes */
